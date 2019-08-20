@@ -1,10 +1,8 @@
-'use strict';
 const express = require('express');
 const compression = require('compression');
 const path = require('path');
 
 const _port = process.env.PORT || 4100;
-const _app_folder = 'am-es-sales';
 
 const app = express();
 app.use(compression());
@@ -12,11 +10,6 @@ app.use(compression());
 app.get('*', function (req, res) {
   const index = path.join(__dirname, 'build', 'index.html');
   res.sendFile(index);
-});
-
-// ---- SERVE APLICATION PATHS ---- //
-app.all('*', function(req, res) {
-  res.status(200).sendFile(`/`, { root: _app_folder });
 });
 
 // ---- START UP THE NODE SERVER  ----
