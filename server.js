@@ -3,7 +3,7 @@ const express = require('express');
 const compression = require('compression');
 
 const _port = process.env.PORT || 4100;
-const _app_folder = 'dist/scradio';
+const _app_folder = 'am-es-sales';
 
 const app = express();
 app.use(compression());
