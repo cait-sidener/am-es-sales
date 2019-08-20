@@ -13,8 +13,8 @@ app.get('*', function (req, res) {
 
 // ---- SERVE APLICATION PATHS ---- //
 app.all('*', function(req, res) {
-  res.status(200).sendFile(`/`, { root: _app_folder });
-});
+  res.status(200).sendFile(`/`, { root: path.join(__dirname, 'dist', 'am-es-sales') });
+  });
 
 // ---- START UP THE NODE SERVER  ----
 app.listen(_port, function() {
