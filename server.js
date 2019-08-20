@@ -11,9 +11,6 @@ app.get('*', function (req, res) {
   const index = path.join(__dirname, 'dist', 'am-es-sales', 'index.html');  res.sendFile(index);
 });
 
-// ---- SERVE STATIC FILES ---- //
-app.get('*.*', express.static(_app_folder, { maxAge: '1y' }));
-
 // ---- SERVE APLICATION PATHS ---- //
 app.all('*', function(req, res) {
   res.status(200).sendFile(`/`, { root: _app_folder });
