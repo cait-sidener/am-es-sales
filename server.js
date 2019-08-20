@@ -10,9 +10,9 @@ const app = express();
 app.use(compression());
 
 app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'am-es-sales', 'index.html');
+  const index = path.join(__dirname, 'build', 'index.html');
   res.sendFile(index);
- });
+});
 
 // ---- SERVE APLICATION PATHS ---- //
 app.all('*', function(req, res) {
