@@ -8,8 +8,7 @@ const app = express();
 app.use(compression());
 
 app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'dist', 'index.html');
-  res.sendFile(index);
+  const index = path.join(__dirname, 'dist', 'am-es-sales', 'index.html');  res.sendFile(index);
 });
 
 // ---- START UP THE NODE SERVER  ----
