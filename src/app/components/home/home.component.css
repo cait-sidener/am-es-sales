@@ -4,7 +4,8 @@
   width: 75%;
   height: 100%;
   padding: 20px;
-  border: 20px double yellowgreen;
+  border: 15px solid #cc0000;
+  outline: 15px solid #0000b2;
 }
 
 .container {

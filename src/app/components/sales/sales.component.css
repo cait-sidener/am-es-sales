@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .button {
-  background-color: #000;
-  border-radius: 2px;
+  background-image: linear-gradient(to right, #0000b2 0%, #cc0000 51%, #0000b2 100%);
+  border-radius: 8px;
   color:#fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
   padding: 20px;
   text-decoration: none;
   width: 100%;
+}
+
+.button:hover {
+  background-position: right center;
 }
 
 .container {
@@ -25,5 +29,6 @@
   width: 75%;
   height: 100%;
   padding: 20px;
-  border: 20px double yellowgreen;
+  border: 15px solid #cc0000;
+  outline: 15px solid #0000b2;
 }

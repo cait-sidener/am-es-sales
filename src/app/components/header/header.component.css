@@ -1,9 +1,22 @@
+@font-face {
+  font-family: 'AMERD___';
+  src: url('../../../assets/fonts/AMERD___.TTF')  format('truetype');
+  }
+
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.america {
+  font-family: 'AMERD___';
+  font-size: 3.5em;
+  background: -webkit-linear-gradient(#cc0000, #0000b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 div.container {
   font-family: Raleway;
   margin: 0 auto;
-  padding: 3em 3em;
+  padding: 0 3em 3em 3em;
   text-align: center;
 }
 
@@ -57,4 +70,13 @@ div.topBotomBordersOut a:hover:after {
 
 .navbar-brand {
   padding-top: 5em;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .america {
+    font-size: 2.5em;
+  }
+  .topBotomBordersOut {
+    font-size: 1em;
+  }
 }

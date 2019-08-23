@@ -74,3 +74,9 @@ a:link, :visited, :hover, :active {
 .has-text-right {
   text-align: right;
 }
+
+@media only screen and (max-device-width: 600px) {
+  .container {
+    margin: 10px 100px 50px 100px;
+  }
+}
